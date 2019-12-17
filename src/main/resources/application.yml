@@ -1,0 +1,15 @@
+
+spring:
+  profiles:
+    active: awss3
+  cloud:
+    config:
+      server:
+        awss3:
+          region: us-west-2
+          bucket: gc-cloud-config-dev
+#        git:
+#          uri: file://${user.home}/workspace/config-props
+
+server:
+  port: 8888
